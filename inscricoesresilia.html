@@ -2,23 +2,85 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Helvetica, Verdana, sans-serif;
+            background-color: #0B0B0B;
+        }
+
+        .form {
+            color: #FFE77E;
+            border: 5px solid #FFD000;
+            border-radius: 10px;
+            background: #0B0B0B;
+            width: 30vw;
+            padding: 10px;
+            margin: auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url(https://www.resilia.com.br/wp-content/themes/resiliaTheme/assets/images/logo.png) left bottom no-repeat;
+        }
+
+        label {
+            font-weight: 600;
+        }
+
+        .button {
+            border: 2px solid #FFD000;
+            background-color: #0B0B0B;
+            color:  #ffffff;
+            padding: 6px;
+            border-radius: 9px;
+            font-weight: 600;
+        }
+
+        .button:hover {
+            background-color: #FFD000;
+            border: 2px solid #ffffff;
+            color: #0B0B0B;
+        }
+
+        h1 {
+            color:#ffffff;
+        }
+
+        p {
+            color: #FFE77E;
+            width: 40vw;
+            text-align: justify;
+        }
+
+        h1, p {
+            margin-left: 10px;
+        }
+    </style>
     <title>Formulário Resilia</title>
 </head>
 <body>
-    <form>
-        <label for="nome">Nome completo:</label>
-        <input type="text" name="nome" id="nome">
-        <br>
-        <br>
-        <label for="ano">Ano de nascimento:</label>
-        <input type="month" name="ano" id="ano">
-        <br>
-        <br>
-        <label for="cpf">CPF:</label>
-        <input type="number" name="cpf" id="cpf">
-        <br>
-        <br>
-        <input type="submit" value="Enviar">
-    </form>
+    <h1>Torne-se um resiliente!</h1>
+    <p>Venha fazer parte de um programa de formação completo, do zero ao profissional em Desenvolvimento Web, com o aprendizado de hard e soft skills. Para dar início a seu cadastro no processo seletivo da Resilia, insira seus dados no formulário abaixo:</p>
+    <br>
+    <div class="form">
+        <form>
+            <label for="nome">Nome completo:</label>
+            <br>
+            <input type="text" name="nome" id="nome">
+            <br>
+            <label for="ano">Ano de nascimento:</label>
+            <br>
+            <input type="month" name="ano" id="ano">
+            <br>
+            <label for="cpf">CPF:</label>
+            <br>
+            <input type="number" name="cpf" id="cpf">
+            <br>
+            <input type="submit" value="Enviar" class="button">
+        </form>
+    </div>
 </body>
 </html>
