@@ -4,83 +4,88 @@
     <meta charset="UTF-8">
     <style>
         body {
-            font-family: Helvetica, Verdana, sans-serif;
-            background-color: #0B0B0B;
+            background-color: #FEF200;
+            color: #000000;
+            font-family: "Helvetica", Open Sans, sans-serif;
+        }
+
+        .origem {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .texto {
+            width: 43vw;
+            margin-left: 5vw;
         }
 
         .form {
-            color: #FFE77E;
-            border: 5px solid #FFD000;
-            border-radius: 10px;
-            background: #0B0B0B;
-            width: 30vw;
-            padding: 10px;
-            margin: auto;
-        }
-
-        form {
-            display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: url(https://www.resilia.com.br/wp-content/themes/resiliaTheme/assets/images/logo.png) left bottom no-repeat;
+            justify-content: space-evenly;
+            width: 30vw;
+            margin-right: 5vw;
+            font-weight: 800;
+            letter-spacing: -2px;
+            font-size: 1.1em;
+            transform: scale(1, 1.3);
         }
 
-        label {
-            font-weight: 600;
-        }
-
-        .button {
-            border: 2px solid #FFD000;
-            background-color: #0B0B0B;
-            color:  #ffffff;
-            padding: 6px;
-            border-radius: 9px;
-            font-weight: 600;
-        }
-
-        .button:hover {
-            background-color: #FFD000;
-            border: 2px solid #ffffff;
-            color: #0B0B0B;
+        input {
+            width: 100%;
+            border: 0.5px solid #0b0b0b;
         }
 
         h1 {
-            color:#ffffff;
+            font-weight: 900;
+            font-size: 5.6em;
+            letter-spacing: -9px;
+            line-height: 80%;
+            transform: scale(1, 1.3);
+        }
+
+        .button {
+            width: 30%;
+            background-color: #000000;
+            border: none;
+            font-weight: 800;
+            color: #FEF200;
+            font-size: 1.3em;
+            letter-spacing: -1.5px;
+            padding: 1px;
         }
 
         p {
-            color: #FFE77E;
-            width: 40vw;
-            text-align: justify;
-        }
-
-        h1, p {
-            margin-left: 10px;
+            font-weight: 100;
+            font-size: 1.2em;
+            letter-spacing: -1px;
         }
     </style>
     <title>Formulário Resilia</title>
 </head>
 <body>
-    <h1>Torne-se um resiliente!</h1>
-    <p>Venha fazer parte de um programa de formação completo, do zero ao profissional em Desenvolvimento Web, com o aprendizado de hard e soft skills. Para dar início a seu cadastro no processo seletivo da Resilia, insira seus dados no formulário abaixo:</p>
-    <br>
+    <div class="origem">
+    <div class="texto">
+        <h1>torne-se
+            <br>
+            um resiliente</h1>
+        <p>Venha fazer parte de um programa de formação completo, do zero ao profissional em Desenvolvimento Web, com o aprendizado de hard e soft skills. Para dar início a seu cadastro no processo seletivo da Resilia, insira seus dados no formulário ao lado</p>
+    </div>
     <div class="form">
         <form>
-            <label for="nome">Nome completo:</label>
-            <br>
+            <label for="nome">nome completo</label>
             <input type="text" name="nome" id="nome">
-            <br>
-            <label for="ano">Ano de nascimento:</label>
-            <br>
-            <input type="month" name="ano" id="ano">
-            <br>
-            <label for="cpf">CPF:</label>
-            <br>
+            <label for="ano">data de nascimento</label>
+            <input type="date" name="ano" id="ano">
+            <label for="cpf">cpf</label>
             <input type="number" name="cpf" id="cpf">
             <br>
-            <input type="submit" value="Enviar" class="button">
+            <br>
+            <input type="submit" value="eu quero!" class="button">
         </form>
+    </div>
     </div>
 </body>
 </html>
