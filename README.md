@@ -10,4 +10,4 @@ A Resilia está se preparando para abrir uma nova turma e, por conta disso, prec
 
 <p align="center">O formulário deve ser envolvido com a tag form</p>
 
-![image](https://raw.githubusercontent.com/55021/formulario-resilia/main/formulario-screenshot.png")
+![image](https://raw.githubusercontent.com/55021/formulario-resilia/main/formulario-screenshot.png)
