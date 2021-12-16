@@ -8,4 +8,4 @@ A Resilia está se preparando para abrir uma nova turma e, por conta disso, prec
 * Campo de ano de nascimento
 * Campo de CPF
 
-<p align="center">O formulário deve ser envolvido com a tag <form></p>
+<p align="center">O formulário deve ser envolvido com a tag form</p>
